@@ -29,12 +29,29 @@ tata.info('Hello', 'Have a nice day.', {// config})
 tata.success('Hello', 'Have a nice day.', {// config})
 tata.warn('Hello', 'Have a nice day.', {// config})
 tata.error('Hello', 'Have a nice day.', {// config})
+
+//icon
+tata.success(
+    'Hello', 
+    'Have a nice day.', 
+    {
+        icon:'settings'
+    }
+)
+tata.error(
+    'Hello', 
+    'Have a nice day.', 
+    {
+        icon:'bug_report'
+    }
+)
 ```
 
 ## Config
 
 | name | tpye | default | Description |
 |---------|--------|--------|-------------|
+| icon | string | type | custom Icon from Material Icons (https://fonts.google.com/icons?selected=Material+Icons)
 | position | string | tr | tr, tm, tl, mr, mm, ml, bl, bm, br |
 | duration | number | 3000 | show haw many time |
 | progress | boolean | true | dispaly a progress bar |

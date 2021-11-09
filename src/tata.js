@@ -137,7 +137,7 @@ function removeElement(element) {
 
 function render(title, text, opts) {
   const id = randomId() 
-  const icon = type2Icon(opts.type)
+  const icon = opts.icon ? opts.icon : type2Icon(opts.type)
   const position = mapPostion(opts.position)
   const animate = mapAnimateIn(opts.animate, opts.position)
   const ta = { title, text, opts, id }
